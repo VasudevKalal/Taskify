@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskify</title>
+  <style>
+    html,body{width: 100%; height: 100%; background-color: #dbf8fa;}
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .navbar
+    {
+      display: flex;
+      justify-content: space-between;
+      background-color: #1a2332;
+      color: white;
+      padding: 10px 20px;
+    }
+    .nav
+    {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .nav2
+    {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    ul
+    {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a
+    {
+      font-size: larger;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+       padding: 8px 14px;
+      border-radius: 6px;
+    }
+    ul li a
+    {
+      font-size: larger;
+      text-decoration: none;
+      color: rgb(22, 21, 21);
+      font-weight: bolder;
+       padding: 8px 14px;
+      border-radius: 6px;
+    }
+    a:hover
+    {
+      background-color: #F3F4F6;
+      color: #1a73e8;
+       padding: 8px 14px;
+      border-radius: 6px;
+    }
+    .main
+    {
+      display: flex;
+      align-items: stretch;
+    }
+    .div1,.div2,.div3,.div4,.div5
+    {
+      width: 18%;
+      height: 52vh;
+      background-color:  #f8f9fa;
+      margin: 10px;
+      text-align: center;
+      border: 1px solid  #3b3d3f;
+      border-radius: 5px;
+      
+    }
+    .div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover
+    {
+      transition: ease-in-out 0.3s;
+      transform: scale(1.02);
+    }
+    .div1 img,.div2 img,.div3 img,.div4 img,.div5 img {
+      display: block;
+      margin: 12px auto;
+      max-width: 80%;
+      height: auto;
+    }
+    button
+    {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      margin: 0px;
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover
+    {
+      background-color: #1558b0;
+      transition: ease-in-out 0.3s;
+      transform: scale(1.01);
+    }
+    .button
+    {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .but
+    {
+      background-color: rgb(238, 228, 228);
+      color: #202124;
+      font-weight: bolder;
+      padding: 10px 15px;
+      font-size: larger;
+    }
+   footer a:hover
+   {
+    background-color: #F3F4F6;
+     padding: 8px 14px;
+      border-radius: 6px;
+      color: black;
+   }
+   .button button:hover
+   {
+    
+    background-color: #F3F4F6;
+     padding: 8px 14px;
+      border-radius: 6px;
+      color: black;
+   }
+   .task
+   {
+    background-color: light grey;
+    display: flex;
+    align-items: stretch;
+   }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="nav">
+        <ul>
+          <li><a href="home"><b>Taskify</b>
+          </a></li><li>|</li>
+    <li><a href="Home">Home</a></li><li>|</li>
+    <li><a href="contact">Contact Us</a></li><li>|</li>
+    <li><a href="Help">Help & Support</a></li>
+    </ul>
+      </div>
+      <div class="nav2">
+        <ul>
+     <li><a href="./login.html" target="_self">Login</a></li><li>|</li>
+    <li><a href="Signup">Signup</a></li>
+    <li><button>Start For Free</button></li>
+    </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="task">
+   <div style="width: 30%; margin: 10px;border-radius: 6px; text-align: center; padding: 40px 0;background-color: #a6d1b3;">
+    <h1>Welcome to Taskify</h1><br>
+    <h3>Your Ultimate Task Management Solution</h3><br>
+    <h5>Organize, prioritize, and conquer your to-do list with ease. Taskify helps you stay on top of your tasks, deadlines, and goals, so you can focus on what matters most.</h5><br>
+    <h2>Manage Your Tasks
+    </h2>
+    <div style="text-align: left;padding-left: 10px;">
+    <input type="checkbox"> &nbsp;Reading <br>
+    <input type="checkbox"> &nbsp;Playing<br>
+    <input type="checkbox"> &nbsp;Coding<br>
+    <input type="checkbox"> &nbsp;Running<br>
+    <input type="checkbox"> &nbsp;Cooking<br>
+    <input type="checkbox"> &nbsp;Writing<br><br>
+    <button style=" background-color: rgb(196, 235, 25);
+      color: #202124;
+      font-weight: bolder;
+      padding: 10px 15px;
+      ">+ Create New Task</button>
+    </div>
+   </div>
+   <div style="width:70%;margin: auto;margin-right: 10px;text-align:center;background-color: #f3eeab;height: 430px;border-radius: 6px;">
+   
+    <img src="../chat.png" alt="taskify" width="100%" height="430px">
+   </div>
+  </div>
+  <div class="button">
+    <button class="but">Home</button>
+    <button class="but">Education</button>
+    <button class="but">Personal</button>
+    <button class="but">Management</button>
+    <button class="but">Customer Support</button>
+    <button class="but">+ Create more</button>
+  </div>
+  <div class="main">
+    <div class="div1"><img src="../taskmanager.png" alt="task" ><br><hr><br><h3>Create and Manage Tasks</h3><br><h5>Create tasks quickly with clear titles, descriptions, and due dates.
+Add important details to each task for better planning.
+This helps users stay organized and focused every day.</h5></div>
+    <div class="div2"><img src="../smartreminders.png" alt="task" ><br><hr><br><h3>Smart Reminders</h3><br><h5>Get timely reminders before important deadlines.
+Never forget tasks or meetings again.
+Stay stress-free and always prepared.</h5></div>
+    <div class="div3"><img src="../taskpriority.png" alt="task" ><br><hr><br><h3>Task Priorty</h3><br><h5>Assign priorities to tasks based on importance.
+Focus on urgent work first and plan better.
+Improve productivity with smart task ordering.</h5></div>
+    <div class="div4"><img src="../userfriendly.png" alt="task" ><br><hr><br><h3>User-Friendly Interface</h3><br><h5>Simple and modern design for easy navigation.
+No clutter, no confusion—just tasks.
+Perfect for beginners and daily use.</h5></div>
+    <div class="div5"><img src="../anywhere.png" alt="task" ><br><hr><br><h3>Anywhere Access</h3><br><h5>Works smoothly on mobile, tablet, and desktop.
+Access your tasks anytime, anywhere.
+Enjoy a consistent experience on all devices.</h5></div>
+  </div>
+  <footer>
+    <div style="display: flex;justify-content: space-between;background-color: #1a2332;padding: 20px 10px 10px 10px;color: beige;">
+      <div><h1>Taskify</h1><br>
+      <h4>Plan smarter, stay organized, and achieve more every single day.</h4>
+      </div>
+      <div>
+        <h3>Featured</h3><br>
+        <ul style="list-style-type: none;display: flex;flex-direction: column;gap: 10px;font-weight: lighter;">
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">For Teams</a></li>
+        </ul>
+        </div>
+        <div>
+        <h3>Resources</h3><br>
+        <ul style="list-style-type: none;display: flex;flex-direction: column;gap: 10px;font-weight: lighter;">
+          <li><a href="#">Download Apps</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Customer Services</a></li>
+          <li><a href="#">Productivity Methods</a></li>
+          <li><a href="#">Developer API</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3><br>
+        <ul style="list-style-type: none;display: flex;flex-direction: column;gap: 10px;font-weight: lighter;">
+          <li><a href="#">Abuout us</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Customer Services</a></li>
+          <li><a href="#">Inspiration Hub</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Twist</a></li>
+        </ul>
+      </div><br><br><br><br><br><br><br>
+      </div><h5 style="color: lightgrey;background-color: #1a2332;">Security | Contact Us | Privacy TermsCookie Prefrences @Taskify <br><br><br></h5>
+    </div>
+  </footer>
+</body>
+</html>
